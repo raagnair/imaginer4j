@@ -91,27 +91,4 @@
             <version>2.10.0.pr2</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <!-- allows user to get/download code, and as long as they have mvn3 & jdk8+ installed
-            they will be able to run our server with: 'mvn clean install exec:java' -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>com.raagnair.im.Imaginer</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
